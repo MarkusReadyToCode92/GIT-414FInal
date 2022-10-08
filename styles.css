@@ -1,0 +1,362 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap');
+
+
+:root{
+    --apple: #D74452;
+    --teal: #2D838D;
+    --beige: #DAD3B7;
+    --orange: #DB9F34;
+    --dark-orange: #DB8E36;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+}
+
+#book {
+    text-align: center;
+}
+p {
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+}
+
+header{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--apple);
+    padding: 30px;
+}
+
+header h1 {
+    padding-top: 15px;
+}
+
+nav a {
+    display: grid;
+    text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: var(--beige);
+  color: var(--teal);
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 0.25rem;
+}
+
+nav a:hover {
+    background-color: var(--dark-orange);
+    color: black;
+}
+ul li{
+    list-style: none;
+    
+}
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+
+}
+
+#about{
+    margin-bottom: 50px;
+    background-color: var(--beige);
+    padding: 150px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+
+
+#book {
+    display: grid;
+    background-color: var(--orange);
+    padding: 50px;
+}
+
+#book div {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+#book p {
+    padding-bottom: 60px;
+    font-size: 18px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+#book img {
+    display: block;
+    width: 220px;
+    max-width: 220px;
+    margin-left: 70px;
+}
+
+#events {
+    padding: 50px;
+}
+
+#events p {
+    text-align: center;
+}
+
+#events div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+}
+
+#events section{
+    border-bottom: 2px solid gray;
+    padding: 20px;
+    margin-right: 20px;    
+}
+#events button {
+    margin-left: 50%;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#news {
+    padding: 50px;
+    background-color: var(--orange);
+}
+
+form {
+    margin-left: 10%;
+    display: block;
+}
+form label {
+    margin-left: 30px;
+}
+form input {
+    padding: 5px;
+    width:20%;
+}
+
+#news button {
+    margin-left: 79%;
+    margin-top: 30px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #404040;
+    color: white;
+}
+
+footer{
+    background-color: var(--apple);
+    padding: 50px;
+    text-align: center;
+}
+
+@media screen and (min-width: 320px){
+    nav ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    
+    }
+    #book {
+        display: grid;
+        background-color: var(--orange);
+        padding: 50px;
+    }
+    
+    #book div {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-columns: 1fr;
+      }
+      #book img {
+        display: block;
+        width: 220px;
+        max-width: 220px;
+        margin-left: 100px;
+    }
+
+    #events {
+        padding: 50px;
+    }
+    
+    #events p {
+        text-align: center;
+    }
+    
+    #events div {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 50px;
+    }
+    
+    #events section{
+        border-bottom: 2px solid gray;
+        padding: 20px;
+        margin-right: 20px;    
+    }
+    #events button {
+        margin-left: 20%;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    form {
+        margin-left: 10%;
+        display: block;
+    }
+    form label {
+        margin-left: 10px;
+    }
+    form input {
+        padding: 5px;
+        width:100%;
+    }
+    #news button {
+        margin-left: 20%;
+        margin-top: 30px;
+        padding: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: #404040;
+        color: white;
+    }
+}
+
+@media screen and (min-width: 860px){
+    nav ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    
+    }
+    #book {
+        display: grid;
+        background-color: var(--orange);
+        padding: 50px;
+    }
+    #book img {
+        display: block;
+        width: 220px;
+        max-width: 220px;
+        margin-left: 120px;
+    }
+    #book div {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-columns: 1fr 1fr;
+      }
+      #events {
+        padding: 50px;
+    }
+    
+    #events p {
+        text-align: center;
+    }
+    
+    #events div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 50px;
+    }
+    
+    #events section{
+        border-bottom: 2px solid gray;
+        padding: 20px;
+        margin-right: 20px;    
+    }
+    #events button {
+        margin-left: 50%;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1250px){
+    nav ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    
+    }
+    #book {
+        display: grid;
+        background-color: var(--orange);
+        padding: 50px;
+    }
+    
+    #book div {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-columns: repeat(4, 1fr);
+      }
+    
+    #book p {
+        padding-bottom: 60px;
+        font-size: 18px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    
+    #book img {
+        display: block;
+        width: 220px;
+        max-width: 220px;
+        margin-left: 70px;
+    }
+    #events {
+        padding: 50px;
+    }
+    
+    #events p {
+        text-align: center;
+    }
+    
+    #events div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 50px;
+    }
+    
+    #events section{
+        border-bottom: 2px solid gray;
+        padding: 20px;
+        margin-right: 20px;    
+    }
+    #events button {
+        margin-left: 50%;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    form {
+        margin-left: 10%;
+        display: block;
+    }
+    form label {
+        margin-left: 30px;
+    }
+    form input {
+        padding: 5px;
+        width:20%;
+    }
+    #news button {
+        margin-left: 79%;
+        margin-top: 30px;
+        padding: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: #404040;
+        color: white;
+    }
+}
